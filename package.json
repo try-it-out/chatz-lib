@@ -1,0 +1,36 @@
+{
+  "name": "chatz-lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha --reporter spec --require test/bootstrap/node test/**/*.test.js",
+    "coverage": "NODE_ENV=test nyc mocha --reporter spec --require test/bootstrap/node test/**/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/try-it-out/chatz-lib.git"
+  },
+  "author": "Vasilii Ermilov",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/try-it-out/chatz-lib/issues"
+  },
+  "homepage": "https://github.com/try-it-out/chatz-lib#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.3.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "mocha": "^6.2.0",
+    "mongodb-memory-server-global": "^5.2.3",
+    "nyc": "^14.1.1"
+  },
+  "dependencies": {
+    "mongoose": "^5.7.0",
+    "winston": "^3.2.1"
+  }
+}
