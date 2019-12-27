@@ -3,5 +3,6 @@ module.exports = {
   ErrorHandler: require('./lib/ErrorHandler'),
   createErrorHandler: require('./lib/ErrorHandler').createErrorHandler,
   initLogger: require('./lib/initLogger'),
-  initMongoose: require('./lib/initMongoose')
+  initMongoose: require('./lib/initMongoose'),
+  initPassport: require('./lib/initPassport').initPassport
 }
