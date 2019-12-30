@@ -1,9 +1,17 @@
+const AppError = require('./lib/AppError')
+const ErrorHandler = require('./lib/ErrorHandler')
+const { createErrorHandler } = require('./lib/ErrorHandler')
+const createAuthToken = require('./lib/createAuthToken')
+const initLogger = require('./lib/initLogger')
+const initMongoose = require('./lib/initMongoose')
+const { initPassport } = require('./lib/initPassport')
+
 module.exports = {
-  AppError: require('./lib/AppError'),
-  ErrorHandler: require('./lib/ErrorHandler'),
-  createErrorHandler: require('./lib/ErrorHandler').createErrorHandler,
-  createAuthToken: require('./lib/createAuthToken'),
-  initLogger: require('./lib/initLogger'),
-  initMongoose: require('./lib/initMongoose'),
-  initPassport: require('./lib/initPassport').initPassport
+  AppError,
+  ErrorHandler,
+  createErrorHandler,
+  createAuthToken,
+  initLogger,
+  initMongoose,
+  initPassport
 }
