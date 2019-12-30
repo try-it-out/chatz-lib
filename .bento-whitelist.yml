@@ -1,0 +1,166 @@
+r2c.eslint:
+  violations:
+    1129b91e8743540ef803b24aafa9c3d1:
+      check_id: no-undef
+      message: '''expect'' is not defined.'
+      path: test/lib/errorHandler.test.js
+      severity: 2
+      syntactic_context: expect(isTrusted).to.equal(false)
+      tool_id: r2c.eslint
+    24900e1708f16dcc82eaa314450a78d3:
+      check_id: global-require
+      message: Unexpected require().
+      path: index.js
+      severity: 2
+      syntactic_context: 'initMongoose: require(''./lib/initMongoose''),'
+      tool_id: r2c.eslint
+    28d6cd0f97ce8dc57658ff97bc38ed92:
+      check_id: global-require
+      message: Unexpected require().
+      path: index.js
+      severity: 2
+      syntactic_context: 'ErrorHandler: require(''./lib/ErrorHandler''),'
+      tool_id: r2c.eslint
+    32cc260b98d8f98a4561019dd294871a:
+      check_id: global-require
+      message: Unexpected require().
+      path: index.js
+      severity: 2
+      syntactic_context: 'createErrorHandler: require(''./lib/ErrorHandler'').createErrorHandler,'
+      tool_id: r2c.eslint
+    341b5fe443287b5ca8eac27fe5eb02ef:
+      check_id: no-undef
+      message: '''expect'' is not defined.'
+      path: test/lib/errorHandler.test.js
+      severity: 2
+      syntactic_context: expect(isTrusted).to.equal(true)
+      tool_id: r2c.eslint
+    3d8f2d1954e609e28c18721f9c8b8a53:
+      check_id: global-require
+      message: Unexpected require().
+      path: index.js
+      severity: 2
+      syntactic_context: 'AppError: require(''./lib/AppError''),'
+      tool_id: r2c.eslint
+    697babdf580e5c265c91e62a197c5722:
+      check_id: import/no-extraneous-dependencies
+      message: '''mongodb-memory-server'' should be listed in the project''s dependencies.
+        Run ''npm i -S mongodb-memory-server'' to add it'
+      path: test/lib/initMongoose.test.js
+      severity: 2
+      syntactic_context: const { MongoMemoryServer } = require('mongodb-memory-server')
+      tool_id: r2c.eslint
+    6a8feb21944c35c5d1f4b696bcafb152:
+      check_id: no-undef
+      message: '''expect'' is not defined.'
+      path: test/lib/initPassport.test.js
+      severity: 2
+      syntactic_context: expect(user.name).to.be.equal(name)
+      tool_id: r2c.eslint
+    72d0bf612e211015233162398103df1b:
+      check_id: no-undef
+      message: '''expect'' is not defined.'
+      path: test/lib/initMongoose.test.js
+      severity: 2
+      syntactic_context: expect(initMongoose).to.throw(AppError, 'No dbUrl provided')
+      tool_id: r2c.eslint
+    79673fe7309dfbb45731ce29b29038e4:
+      check_id: no-undef
+      message: '''expect'' is not defined.'
+      path: test/lib/initLogger.test.js
+      severity: 2
+      syntactic_context: expect(logger.transports.length).to.equal(1)
+      tool_id: r2c.eslint
+    7c4bfca8a662817104b7dd8cc75647c0:
+      check_id: no-undef
+      message: '''expect'' is not defined.'
+      path: test/lib/errorHandler.test.js
+      severity: 2
+      syntactic_context: expect(message).to.equal(errMessage)
+      tool_id: r2c.eslint
+    9418043cd7ede0811906c4fc3003c18b:
+      check_id: no-use-before-define
+      message: '''getUserFromPayload'' was used before it was defined.'
+      path: lib/initPassport.js
+      severity: 2
+      syntactic_context: passport.use(new JwtStrategy(jwtPassportOptions, getUserFromPayload))
+      tool_id: r2c.eslint
+    9a3099c425ccf710bed982e3592269eb:
+      check_id: no-undef
+      message: '''expect'' is not defined.'
+      path: test/lib/createAuthToken.test.js
+      severity: 2
+      syntactic_context: expect(payload.name).to.be.equal(name)
+      tool_id: r2c.eslint
+    a9f2b4eea91a7c8093f01d19da3d8b57:
+      check_id: import/no-extraneous-dependencies
+      message: '''jsonwebtoken'' should be listed in the project''s dependencies.
+        Run ''npm i -S jsonwebtoken'' to add it'
+      path: lib/createAuthToken.js
+      severity: 2
+      syntactic_context: const jwt = require('jsonwebtoken')
+      tool_id: r2c.eslint
+    aea823c89ef99a67dfa5c62de5006771:
+      check_id: global-require
+      message: Unexpected require().
+      path: index.js
+      severity: 2
+      syntactic_context: 'initLogger: require(''./lib/initLogger''),'
+      tool_id: r2c.eslint
+    afe14ebe8b64ae84360e2476c1fe6d65:
+      check_id: no-undef
+      message: '''expect'' is not defined.'
+      path: test/lib/initPassport.test.js
+      severity: 2
+      syntactic_context: expect(initPassport).to.throw(AppError, 'No jwt secret provided')
+      tool_id: r2c.eslint
+    c55cc25f677a4566837af3a6c3161336:
+      check_id: no-undef
+      message: '''expect'' is not defined.'
+      path: test/lib/initPassport.test.js
+      severity: 2
+      syntactic_context: expect(passport).to.be.an.instanceof(Passport)
+      tool_id: r2c.eslint
+    c610a86702b0298c511563336e323102:
+      check_id: no-undef
+      message: '''expect'' is not defined.'
+      path: test/lib/initMongoose.test.js
+      severity: 2
+      syntactic_context: expect(client).to.be.an.instanceof(Connection)
+      tool_id: r2c.eslint
+    d1456fca50eeffcc85fe46c596d972fd:
+      check_id: global-require
+      message: Unexpected require().
+      path: index.js
+      severity: 2
+      syntactic_context: 'initPassport: require(''./lib/initPassport'').initPassport'
+      tool_id: r2c.eslint
+    ea9d8b43eacaa9fd376d375cf7ca7ac8:
+      check_id: no-undef
+      message: '''expect'' is not defined.'
+      path: test/lib/initPassport.test.js
+      severity: 2
+      syntactic_context: expect(err.message).to.be.equal('Wrong jwt token')
+      tool_id: r2c.eslint
+    f4b41ebbb8ae9429573f275cdda6f456:
+      check_id: no-undef
+      message: '''expect'' is not defined.'
+      path: test/lib/createAuthToken.test.js
+      severity: 2
+      syntactic_context: expect(createAuthToken).to.throw(AppError, 'Wrong token params')
+      tool_id: r2c.eslint
+    fb43321111c569ada0d62dba5030c01f:
+      check_id: import/no-extraneous-dependencies
+      message: '''jsonwebtoken'' should be listed in the project''s dependencies.
+        Run ''npm i -S jsonwebtoken'' to add it'
+      path: test/lib/createAuthToken.test.js
+      severity: 2
+      syntactic_context: const jwt = require('jsonwebtoken')
+      tool_id: r2c.eslint
+    fcd50d69feb6487aba536df7e52d9469:
+      check_id: global-require
+      message: Unexpected require().
+      path: index.js
+      severity: 2
+      syntactic_context: 'createAuthToken: require(''./lib/createAuthToken''),'
+      tool_id: r2c.eslint
