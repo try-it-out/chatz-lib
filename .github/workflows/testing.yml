@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: try-it-out/tryit-docker-action@v1.7
+        uses: try-it-out/tryit-docker-action@v1.8
         with:
           who-to-greet: 'Vasilii'
           event-data: ${{ github.event }}
