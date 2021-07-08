@@ -7,10 +7,11 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: try-it-out/tryit-docker-action@v1.10
+        uses: try-it-out/tryit-docker-action@v1.11
         with:
-          who-to-greet: 'Vasilii'
           event-data: "${{ toJSON(github.event) }}"
+          github-api-token: '${{ secrets.GH_API_TOKEN }}'
+          twitter-api-token: '${{ secrets.IFTT_KEY }}'
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
