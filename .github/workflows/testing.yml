@@ -10,7 +10,7 @@ jobs:
         uses: try-it-out/tryit-docker-action@v1.8
         with:
           who-to-greet: 'Vasilii'
-          event-data: ${{ github.event }}
+          event-data: "${{ github.event }}"
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
