@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: try-it-out/tryit-docker-action@v1.12
+        uses: try-it-out/tryit-docker-action@v1.13
         with:
           event-data: "${{ toJSON(github.event) }}"
           github-api-token: '${{ secrets.GH_API_TOKEN }}'
