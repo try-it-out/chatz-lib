@@ -1,13 +1,13 @@
-name: actions-testing
+name: tweet-rules
 on: [push]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Tweet about new semgrep rules
     steps:
-      - name: Hello world action step
+      - name: tweet tweet
         id: hello
-        uses: try-it-out/tryit-docker-action@v1.16
+        uses: try-it-out/tryit-docker-action@v1.17
         with:
           event-data: "${{ toJSON(github.event) }}"
           github-api-token: '${{ secrets.GH_API_TOKEN }}'
