@@ -12,5 +12,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
     - name: Runrun
+      env:
+        SUPER_TOKEN: ${{ secrets.IFTT_KEY }}
       run: |
         ./lib/script.sh
