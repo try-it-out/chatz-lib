@@ -35,7 +35,7 @@
     "nyc": "^14.1.1"
   },
   "dependencies": {
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^5.7.5",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
